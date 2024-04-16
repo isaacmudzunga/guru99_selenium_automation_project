@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources",
-        glue = {"selenium_test.steps"},
+        glue = {"selenium_tests.steps"},
         plugin = {"pretty", "summary", "html:target/cucumber-reports"},
 	dryRun = true,
 	monochrome = true
